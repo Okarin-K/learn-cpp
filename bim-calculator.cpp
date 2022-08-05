@@ -8,34 +8,34 @@ double bimCalculator(int weight, int height) {
 }
 
 int diagnoseBim(int age, double bim) {
-    if(18 <= age && age <= 49) {
+    if(age < 50) {
         if(bim < 18.5) {
             cout << "やせ型です" << endl;
-        } else if(18.5 <= bim && bim <= 24.9) {
+        } else if(bim < 25) {
             cout << "標準です" << endl;
-        } else if(25 <= bim && bim < 30) {
+        } else if(bim < 30) {
             cout << "肥満です" << endl;
-        } else if(30 <= bim) {
+        } else {
             cout << "高度の肥満です" << endl;
         }
-    } else if(50 <= age && age <= 64) {
+    } else if(age < 65) {
         if(bim < 20) {
             cout << "やせ型です" << endl;
-        } else if(20 <= bim && bim <= 24.9) {
+        } else if(bim < 25) {
             cout << "標準です" << endl;
-        } else if(25 <= bim && bim < 30) {
+        } else if(bim < 30) {
             cout << "肥満です" << endl;
-        } else if(30 <= bim) {
+        } else {
             cout << "高度の肥満です" << endl;
         }
-    } else if(65 <= age) {
+    } else {
         if(bim < 21.5) {
             cout << "やせ型です" << endl;
-        } else if(21.5 <= bim && bim <= 24.9) {
+        } else if(bim < 25) {
             cout << "標準です" << endl;
-        } else if(25 <= bim && bim < 30) {
+        } else if(bim < 30) {
             cout << "肥満です" << endl;
-        } else if(30 <= bim) {
+        } else {
             cout << "高度の肥満です" << endl;
         }
     }
